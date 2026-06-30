@@ -1,0 +1,160 @@
+ * {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+
+ body {
+   font-family: 'Plus Jakarta Sans', sans-serif;
+   min-height: 100vh;
+ }
+
+ .container {
+   background-color: #ffbe1b;
+display: grid;
+  grid-template-columns: repeat(4, 1fr);
+    /* display: flex;
+   align-items: start;
+   justify-content: center;
+   gap: 10px;*/
+   /* flex-wrap: wrap;  */
+ }
+
+ .recipe-card {
+   margin: 10px;
+   background: #ffffff;
+   border-radius: 28px;
+   width: 400px;
+   padding: 15px;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+   border: 1px solid #f0f0f0;
+ }
+
+ /* Image Container with Badge overlay */
+ .image-container {
+   position: relative;
+   width: 100%;
+   height: 250px;
+   border-radius: 20px;
+   overflow: hidden;
+   margin-bottom: 20px;
+ }
+
+ .recipe-image {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+
+ .badge {
+   position: absolute;
+   top: 14px;
+   left: 14px;
+   background: #ffffff;
+   padding: 6px 14px;
+   border-radius: 20px;
+   display: flex;
+   align-items: center;
+   gap: 4px;
+   font-size: 0.75rem;
+   font-weight: 700;
+   color: #111827;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .badge-star {
+   color: #f59e0b;
+ }
+
+ /* Text Content */
+ .card-content {
+   padding: 0 6px;
+ }
+
+ .title {
+   font-size: 1.4rem;
+   font-weight: 700;
+   color: #F76116;
+   font-weight: 900;
+   margin-bottom: 8px;
+   line-height: 1.25;
+ }
+
+ .description {
+   font-size: 0.95rem;
+   color: #6b7280;
+   line-height: 1.45;
+   margin-bottom: 20px;
+ }
+
+ /* Meta Divider & Stats Grid */
+ .divider {
+   height: 1px;
+   background-color: #f0f0f0;
+   margin-bottom: 16px;
+ }
+
+ .stats-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-bottom: 16px;
+   border-bottom: 1px solid #f0f0f0;
+   margin-bottom: 18px;
+ }
+
+ .stat-item {
+   display: flex;
+   align-items: center;
+   gap: 6px;
+   font-size: 0.85rem;
+   color: #6b7280;
+   font-weight: 500;
+   flex: 1;
+   justify-content: center;
+ }
+
+ /* Vertical boundary lines for stats */
+ .stat-item:not(:last-child) {
+   border-right: 1px solid #e5e7eb;
+ }
+
+ .stat-item strong {
+   color: #111827;
+   font-weight: 700;
+ }
+
+ /* Tags Section */
+ .tags-container {
+   display: flex;
+   gap: 8px;
+   margin-bottom: 24px;
+   flex-wrap: wrap;
+ }
+
+ .tag {
+   background-color: #f3f4f6;
+   color: #111827;
+   padding: 8px 16px;
+   border-radius: 20px;
+   font-size: 0.85rem;
+   font-weight: 600;
+ }
+
+ /* Button styling */
+ .btn-submit {
+   width: 100%;
+   background-color: #003501;
+   color: #ffffff;
+   border: none;
+   padding: 16px;
+   border-radius: 30px;
+   font-size: 1rem;
+   font-weight: 600;
+   cursor: pointer;
+   transition: background-color 0.2s ease;
+ }
+
+ .btn-submit:hover {
+   background-color: #008001;
+ }

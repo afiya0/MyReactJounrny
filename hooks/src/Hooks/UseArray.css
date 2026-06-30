@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #cc8091, #ffeef3);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.card {
+  width: 700px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  padding: 40px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.card h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  color: #b14052;
+}
+
+.card p {
+  color: #777;
+  margin: 12px 0 30px;
+}
+
+button {
+  border: none;
+  background: #b14052;
+  color: white;
+  padding: 14px 34px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+button:hover {
+  transform: translateY(-4px);
+  background: #8f3043;
+  box-shadow: 0 12px 25px rgba(177, 64, 82, 0.3);
+}
+
+.fruit-grid {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 18px;
+}
+
+.fruit-card {
+  background: white;
+  padding: 18px;
+  border-radius: 18px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #444;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+
+.fruit-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  background: #ffe4ed;
+}

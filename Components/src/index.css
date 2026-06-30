@@ -1,0 +1,119 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  height: 70px;
+  width: 100%;
+  padding: 0 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #38bdf8;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+ul li {
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* underline animation */
+ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #38bdf8;
+  transition: 0.3s;
+}
+
+ul li:hover {
+  color: #38bdf8;
+}
+
+ul li:hover::after {
+  width: 100%;
+}
+.container {
+  padding: 20px;
+  min-height: 100vh;
+  width: 100%;
+  background: rgb(41, 39, 16);
+
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: 200px;
+  width: 350px;
+  background-color: rgb(172, 167, 167);
+  color: rgb(0, 0, 0);
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 20px;
+}
+
+.profile-pic {
+  height: 100px;
+  width: 100px;
+  border: 2px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-pic img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 20px;
+}
+.footer{
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}

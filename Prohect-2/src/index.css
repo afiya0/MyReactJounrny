@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Cmbine";
+  src: url(../src/assets/CabinetGrotesk-Black.otf);
+}
+.textHead{
+  font-family: "Cmbine";
+  /* color: aliceblue; */
+}

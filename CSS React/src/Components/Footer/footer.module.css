@@ -1,0 +1,48 @@
+.footer {
+  background: #111;
+  color: white;
+  padding: 60px 40px 20px;
+}
+
+.footerContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.footerAbout h2 {
+  color: #b8860b;
+}
+
+.footerLinks h3,
+.footerContact h3 {
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footerLinks ul {
+  list-style: none;
+}
+
+.footerLinks li {
+  margin-bottom: 10px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.footerLinks li:hover {
+  color: #b8860b;
+}
+
+.footerContact p {
+  margin-bottom: 8px;
+  color: #ccc;
+}
+
+.footerBottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  color: #888;
+}

@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #fff6f8, #ffe4ed);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 500px;
+  padding: 40px;
+  text-align: center;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(12px);
+  border-radius: 24px;
+  box-shadow: 0 15px 40px rgba(0,0,0,.08);
+}
+
+.card h1 {
+  font-family: "Playfair Display", serif;
+  color: #B14052;
+  font-size: 42px;
+}
+
+.subtitle {
+  margin: 15px 0 30px;
+  color: #777;
+  line-height: 1.6;
+}
+
+.subtitle span {
+  color: #B14052;
+  font-weight: 600;
+}
+
+.name-box {
+  background: #FFE4ED;
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  transition: .3s;
+}
+
+.name-box:hover {
+  transform: scale(1.04);
+}
+
+.name-box h2 {
+  font-size: 38px;
+  color: #B14052;
+  font-family: "Playfair Display", serif;
+}
+
+button {
+  border: none;
+  background: #B14052;
+  color: white;
+  padding: 14px 36px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: .3s;
+}
+
+button:hover {
+  background: #912F42;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(177,64,82,.3);
+}
