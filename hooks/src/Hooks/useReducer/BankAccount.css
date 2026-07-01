@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #252323;
+    min-height: 90vh;
+}
+
+.bank-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bank-card {
+  width: 420px;
+  padding: 40px;
+  border-radius: 24px;
+  background: rgba(80, 80, 80, 0.7);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.bank-card h1 {
+  color: #ebebeb;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.bank-card p {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.balance-box {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.balance-box h2 {
+  color: #1a1a1a;
+  font-size: 2rem;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn-group button {
+  border: none;
+  padding: 14px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.deposit {
+  background: #b8f2e6;
+  color: #155d4a;
+}
+
+.deposit:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(184, 242, 230, 0.5);
+}
+
+.withdraw {
+  background: #ffd6d6;
+  color: #9b2226;
+}
+
+.withdraw:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 214, 214, 0.5);
+}
+
+.reset {
+  background: #dbe7ff;
+  color: #3a5a98;
+}
+
+.reset:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(219, 231, 255, 0.5);
+}
+
+button:active {
+  transform: scale(0.97);
+}

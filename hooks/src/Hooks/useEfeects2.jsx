@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from "react";
-import './useEffectEg.css';
-import Prev from "./previous";
+import "./useEffectEg.css";
 
 const UseEffectEg = () => {
   const [name, setName] = useState("Ali");
 
   useEffect(() => {
-  
-   })
-  
+    console.log("Name changed:", name);
+  }, [name]);
+
+  const changeName = () => {
+    setName((prev) => (prev === "Ali" ? "Sara" : "Ali"));
+  };
+
   return (
     <div className="container">
       <div className="card">
@@ -22,7 +25,7 @@ const UseEffectEg = () => {
           <h2>{name}</h2>
         </div>
 
-        <button onClick={() => setName("Sara")}>
+        <button onClick={changeName}>
           Change Name
         </button>
       </div>
