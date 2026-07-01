@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
-import styles from './useEffectEg.module.css';
+import './useEffectEg.css';
+import Prev from "./previous";
 
 const UseEffectEg = () => {
   const [name, setName] = useState("Ali");
 
   useEffect(() => {
-    console.log("Name Changed:", name);
-  }, [name]);
-
+  
+   })
+  
   return (
     <div className="container">
       <div className="card">

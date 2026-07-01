@@ -42,7 +42,6 @@ const App = () => {
       <UseStateColor />
       <UseEffect />
       <UseEffectEg />
-      <UseRefEg />
     </>
   );
 };
